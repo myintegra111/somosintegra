@@ -1,0 +1,4 @@
+Contact: mailto:contacto@myintegra.pt
+Expires: 2027-08-20T23:59:59Z
+Preferred-Languages: pt, en
+Canonical: https://www.somosintegra.pt/.well-known/security.txt

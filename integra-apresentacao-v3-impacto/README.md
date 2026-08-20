@@ -30,3 +30,8 @@ O ficheiro `assets/logo-integra.png` é a imagem enviada pelo utilizador e usada
 
 ## Nota
 O site funciona sem framework, sem base de dados e sem custos obrigatórios de software.
+
+
+## Atualização SEO Final
+
+Consulta `README-SEO.md` e o ficheiro `PASSO-A-PASSO-ATUALIZACAO.txt` que acompanha o ZIP.

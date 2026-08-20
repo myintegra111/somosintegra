@@ -1,0 +1,25 @@
+# InTEGRA
+
+> A InTEGRA é uma associação portuguesa em desenvolvimento dedicada à integração de imigrantes em Portugal através de tecnologia, orientação e parcerias.
+
+## Informação principal
+
+- [Website oficial](https://www.somosintegra.pt/): apresentação da missão, modelo, sustentabilidade e formas de parceria.
+- [Descrição completa para sistemas de IA](https://www.somosintegra.pt/llms-full.txt): contexto detalhado sobre o projeto.
+
+## Áreas de atuação
+
+- Orientação para pessoas que chegam a Portugal
+- Documentação e primeiros passos
+- Habitação, saúde, educação e serviços
+- Emprego e integração de trabalhadores internacionais
+- Parcerias com empresas, municípios, universidades, fundações e associações
+- Modelos B2B e B2G para financiar impacto social
+
+## Estado do projeto
+
+A InTEGRA encontra-se em desenvolvimento. A plataforma e a associação estão a ser estruturadas com ambição nacional.
+
+## Contacto
+
+- Email: contacto@myintegra.pt

@@ -1,0 +1,9 @@
+/* PROJETO */
+Nome: InTEGRA
+Missão: integração de imigrantes em Portugal
+Estado: associação e plataforma em desenvolvimento
+País: Portugal
+
+/* CONTACTO */
+Email: contacto@myintegra.pt
+Website: https://www.somosintegra.pt/

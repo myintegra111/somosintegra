@@ -1,0 +1,52 @@
+# InTEGRA — descrição completa
+
+A InTEGRA é um projeto e associação portuguesa em desenvolvimento, criado para tornar a integração de imigrantes em Portugal mais simples, humana e sustentável.
+
+## Problema
+
+Quem chega a Portugal pode enfrentar, ao mesmo tempo, dúvidas sobre documentação, habitação, emprego, saúde, educação, transportes, serviços públicos e integração na comunidade. A informação existe, mas está frequentemente dispersa por várias entidades, plataformas e instituições. A InTEGRA pretende transformar essa complexidade numa jornada clara, organizada e adaptada à situação de cada pessoa.
+
+## Solução em desenvolvimento
+
+A visão da InTEGRA é desenvolver uma plataforma tecnológica que permita à pessoa compreender:
+
+1. em que ponto da sua jornada se encontra;
+2. o que já tratou;
+3. o que ainda precisa de fazer;
+4. qual deve ser o próximo passo;
+5. que empresas, municípios, associações ou instituições podem ajudá-la.
+
+A experiência deverá abranger documentação, habitação, saúde, educação, emprego, mobilidade, serviços essenciais e integração comunitária.
+
+## Princípio de acesso
+
+O acesso essencial é pensado para ser gratuito para o imigrante. A InTEGRA entende que uma pessoa que acaba de chegar a Portugal não deve encontrar uma nova barreira financeira para obter orientação básica.
+
+## Sustentabilidade
+
+A associação pretende desenvolver atividade económica própria através de serviços e parcerias com organizações que também beneficiam de uma integração melhor:
+
+- empresas que contratam trabalhadores internacionais;
+- municípios e outras entidades públicas;
+- universidades e instituições de ensino;
+- fundações e financiadores de impacto;
+- associações e parceiros institucionais.
+
+O modelo prevê receitas B2B e B2G, projetos específicos, programas empresariais e financiamento institucional. As receitas deverão ser reinvestidas em tecnologia, equipa, operação e expansão do impacto.
+
+## Âmbito territorial
+
+A InTEGRA foi pensada para Portugal inteiro. A plataforma deverá combinar uma base nacional comum com informação, parceiros e oportunidades adaptados à realidade de cada território.
+
+## Público deste website
+
+O website Somos InTEGRA destina-se a empresas, municípios, entidades públicas, universidades, fundações, associações, potenciais parceiros, financiadores e pessoas interessadas em conhecer ou apoiar o projeto.
+
+## Estado atual
+
+A InTEGRA encontra-se em desenvolvimento. O website apresenta a visão, o problema, o modelo proposto e as formas possíveis de colaboração; não representa uma plataforma final totalmente operacional.
+
+## Contacto
+
+Email: contacto@myintegra.pt
+Website: https://www.somosintegra.pt/
