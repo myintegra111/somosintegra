@@ -42,6 +42,7 @@ function openVideo(fileName, title, trigger) {
   modalTitle.textContent = title || "Vídeo InTEGRA";
   modal.classList.add("open");
   modal.setAttribute("aria-hidden", "false");
+  modal.removeAttribute("inert");
   document.body.classList.add("modal-open");
   modalClose?.focus();
 
@@ -68,6 +69,7 @@ function closeVideo() {
   modalVideo.pause();
   modal.classList.remove("open");
   modal.setAttribute("aria-hidden", "true");
+  modal.setAttribute("inert", "");
   modal.hidden = true;
   document.body.classList.remove("modal-open");
   if (lastFocusedElement instanceof HTMLElement) lastFocusedElement.focus();
