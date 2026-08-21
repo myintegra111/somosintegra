@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
+
 <title>InTEGRA | Integração de Imigrantes em Portugal</title>
 
 <meta content="Conheça a InTEGRA, uma associação em desenvolvimento dedicada à integração de imigrantes em Portugal, ligando pessoas, empresas, municípios e instituições." name="description"/>
@@ -45,30 +46,36 @@
 <link href="/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
 <link href="/site.webmanifest" rel="manifest"/>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 
 <link
   rel="preload"
   as="style"
   href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
->
+/>
 
 <link
   rel="stylesheet"
   href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
   media="print"
   onload="this.media='all'"
->
+/>
 
 <noscript>
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
-  >
+  />
 </noscript>
 
-<link as="image" fetchpriority="high" href="/assets/logo-integra-novo.png" rel="preload" type="image/webp"/>
+<link
+  as="image"
+  fetchpriority="high"
+  href="/assets/logo-integra.webp"
+  rel="preload"
+  type="image/webp"
+/>
 
 <script>
 document.documentElement.classList.add('js');
@@ -155,6 +162,7 @@ document.documentElement.classList.add('js');
 <div aria-hidden="true" class="noise"></div>
 
 <header class="topbar" id="topbar">
+
   <a aria-label="InTEGRA — início" class="brand" href="#inicio">
     <img
       alt=""
@@ -176,11 +184,11 @@ document.documentElement.classList.add('js');
   <a class="top-cta" href="#historia">
     Conhecer o projeto
   </a>
+
 </header>
 
 <main id="conteudo-principal">
 
-<!-- HERO -->
 <section class="hero" id="inicio">
 
   <div aria-hidden="true" class="hero-light hero-light-a"></div>
@@ -302,7 +310,6 @@ document.documentElement.classList.add('js');
 
 </section>
 
-<!-- MANIFESTO -->
 <section class="manifesto section" id="manifesto">
 
   <div class="section-label reveal">
@@ -357,7 +364,6 @@ document.documentElement.classList.add('js');
 
 </section>
 
-<!-- STORY -->
 <section class="story section" id="historia">
 
   <div class="section-head reveal">
@@ -378,165 +384,213 @@ document.documentElement.classList.add('js');
 
   </div>
 
-  <div class="video-grid" id="videoGrid">
+ <div class="video-grid" id="videoGrid">
 
-    <a
-      aria-label="Saber mais sobre a origem da InTEGRA"
-      class="video-card featured reveal"
-      href="#manifesto"
-    >
-      <div class="video-number">01</div>
+  <article
+    class="video-card featured reveal"
+    data-video="01-porque-criei-a-integra.mp4"
+    data-title="Porque criei a InTEGRA"
+    tabindex="0"
+    role="button"
+    aria-label="Ver vídeo: Porque criei a InTEGRA"
+  >
+    <div class="video-number">01</div>
 
-      <div class="video-card-copy">
-        <span class="video-kicker">A origem</span>
-        <h3>Porque nasceu a InTEGRA</h3>
-        <p>
-          O momento em que um problema deixou de ser apenas um problema
-          e passou a ser uma missão.
-        </p>
-      </div>
+    <div class="video-card-copy">
+      <span class="video-kicker">A origem</span>
+      <h3>Porque criei a InTEGRA</h3>
+      <p>
+        O momento em que um problema deixou de ser apenas um problema
+        e passou a ser uma missão.
+      </p>
+    </div>
 
-      <span aria-hidden="true" class="round-play chapter-arrow">→</span>
-    </a>
+    <button class="round-play" type="button" aria-label="Reproduzir vídeo">
+      ▶
+    </button>
+  </article>
 
-    <a
-      aria-label="Saber mais sobre o problema que a InTEGRA pretende resolver"
-      class="video-card reveal"
-      href="#manifesto"
-    >
-      <div class="video-number">02</div>
 
-      <div class="video-card-copy">
-        <span class="video-kicker">A realidade</span>
-        <h3>O problema que queremos resolver</h3>
-        <p>Porque a integração ainda é fragmentada, confusa e desigual.</p>
-      </div>
+  <article
+    class="video-card reveal"
+    data-video="02-o-problema.mp4"
+    data-title="O problema que queremos resolver"
+    tabindex="0"
+    role="button"
+    aria-label="Ver vídeo: O problema que queremos resolver"
+  >
+    <div class="video-number">02</div>
 
-      <span aria-hidden="true" class="round-play chapter-arrow">→</span>
-    </a>
+    <div class="video-card-copy">
+      <span class="video-kicker">A realidade</span>
+      <h3>O problema que queremos resolver</h3>
+      <p>
+        Porque a integração ainda é fragmentada, confusa e desigual.
+      </p>
+    </div>
 
-    <a
-      aria-label="Saber mais sobre a solução InTEGRA"
-      class="video-card reveal"
-      href="#como-funciona"
-    >
-      <div class="video-number">03</div>
+    <button class="round-play" type="button" aria-label="Reproduzir vídeo">
+      ▶
+    </button>
+  </article>
 
-      <div class="video-card-copy">
-        <span class="video-kicker">A solução</span>
-        <h3>O que é a InTEGRA</h3>
-        <p>Uma plataforma tecnológica ao serviço de uma missão social.</p>
-      </div>
 
-      <span aria-hidden="true" class="round-play chapter-arrow">→</span>
-    </a>
+  <article
+    class="video-card reveal"
+    data-video="03-o-que-e-a-integra.mp4"
+    data-title="O que é a InTEGRA"
+    tabindex="0"
+    role="button"
+    aria-label="Ver vídeo: O que é a InTEGRA"
+  >
+    <div class="video-number">03</div>
 
-    <a
-      aria-label="Saber mais sobre o acesso gratuito para o imigrante"
-      class="video-card reveal"
-      href="#sustentabilidade"
-    >
-      <div class="video-number">04</div>
+    <div class="video-card-copy">
+      <span class="video-kicker">A solução</span>
+      <h3>O que é a InTEGRA</h3>
+      <p>
+        Uma plataforma tecnológica ao serviço de uma missão social.
+      </p>
+    </div>
 
-      <div class="video-card-copy">
-        <span class="video-kicker">O princípio</span>
-        <h3>Porque será gratuita para o imigrante</h3>
-        <p>A ajuda essencial não deve depender da capacidade de pagar.</p>
-      </div>
+    <button class="round-play" type="button" aria-label="Reproduzir vídeo">
+      ▶
+    </button>
+  </article>
 
-      <span aria-hidden="true" class="round-play chapter-arrow">→</span>
-    </a>
 
-    <a
-      aria-label="Saber mais sobre o modelo sustentável da InTEGRA"
-      class="video-card reveal"
-      href="#sustentabilidade"
-    >
-      <div class="video-number">05</div>
+  <article
+    class="video-card reveal"
+    data-video="04-porque-sera-gratuita.mp4"
+    data-title="Porque será gratuita para o imigrante"
+    tabindex="0"
+    role="button"
+    aria-label="Ver vídeo: Porque será gratuita para o imigrante"
+  >
+    <div class="video-number">04</div>
 
-      <div class="video-card-copy">
-        <span class="video-kicker">O modelo</span>
-        <h3>Como se torna sustentável</h3>
-        <p>Receitas B2B, B2G e parcerias para financiar impacto social.</p>
-      </div>
+    <div class="video-card-copy">
+      <span class="video-kicker">O princípio</span>
+      <h3>Porque será gratuita para o imigrante</h3>
+      <p>
+        A ajuda essencial não deve depender da capacidade de pagar.
+      </p>
+    </div>
 
-      <span aria-hidden="true" class="round-play chapter-arrow">→</span>
-    </a>
+    <button class="round-play" type="button" aria-label="Reproduzir vídeo">
+      ▶
+    </button>
+  </article>
 
-    <a
-      aria-label="Saber mais sobre a Associação InTEGRA"
-      class="video-card reveal"
-      href="#missao"
-    >
-      <div class="video-number">06</div>
 
-      <div class="video-card-copy">
-        <span class="video-kicker">A estrutura</span>
-        <h3>Porque uma associação</h3>
-        <p>Gerar receitas sem perder a missão nem transformar pessoas em produto.</p>
-      </div>
+  <article
+    class="video-card reveal"
+    data-video="05-modelo-sustentavel.mp4"
+    data-title="Como se torna sustentável"
+    tabindex="0"
+    role="button"
+    aria-label="Ver vídeo: Como se torna sustentável"
+  >
+    <div class="video-number">05</div>
 
-      <span aria-hidden="true" class="round-play chapter-arrow">→</span>
-    </a>
+    <div class="video-card-copy">
+      <span class="video-kicker">O modelo</span>
+      <h3>Como se torna sustentável</h3>
+      <p>
+        Receitas B2B, B2G e parcerias para financiar impacto social.
+      </p>
+    </div>
 
-    <a
-      aria-label="Saber mais sobre a visão nacional da InTEGRA"
-      class="video-card reveal"
-      href="#como-funciona"
-    >
-      <div class="video-number">07</div>
+    <button class="round-play" type="button" aria-label="Reproduzir vídeo">
+      ▶
+    </button>
+  </article>
 
-      <div class="video-card-copy">
-        <span class="video-kicker">A escala</span>
-        <h3>Porque Portugal</h3>
-        <p>
-          Uma rede nacional, construída localmente com quem já conhece
-          cada território.
-        </p>
-      </div>
 
-      <span aria-hidden="true" class="round-play chapter-arrow">→</span>
-    </a>
+  <article
+    class="video-card reveal"
+    data-video="06-porque-uma-associacao.mp4"
+    data-title="Porque uma associação"
+    tabindex="0"
+    role="button"
+    aria-label="Ver vídeo: Porque uma associação"
+  >
+    <div class="video-number">06</div>
 
-    <a
-      aria-label="Saber como colaborar com a InTEGRA"
-      class="video-card reveal"
-      href="#parcerias"
-    >
-      <div class="video-number">08</div>
+    <div class="video-card-copy">
+      <span class="video-kicker">A estrutura</span>
+      <h3>Porque uma associação</h3>
+      <p>
+        Gerar receitas sem perder a missão nem transformar pessoas em produto.
+      </p>
+    </div>
 
-      <div class="video-card-copy">
-        <span class="video-kicker">O convite</span>
-        <h3>O que procuramos agora</h3>
-        <p>
-          Parceiros que queiram ajudar a transformar uma visão
-          numa infraestrutura real.
-        </p>
-      </div>
+    <button class="round-play" type="button" aria-label="Reproduzir vídeo">
+      ▶
+    </button>
+  </article>
 
-      <span aria-hidden="true" class="round-play chapter-arrow">→</span>
-    </a>
 
-  </div>
+  <article
+    class="video-card reveal"
+    data-video="07-porque-portugal.mp4"
+    data-title="Porque Portugal"
+    tabindex="0"
+    role="button"
+    aria-label="Ver vídeo: Porque Portugal"
+  >
+    <div class="video-number">07</div>
+
+    <div class="video-card-copy">
+      <span class="video-kicker">A escala</span>
+      <h3>Porque Portugal</h3>
+      <p>
+        Uma rede nacional, construída localmente com quem já conhece cada território.
+      </p>
+    </div>
+
+    <button class="round-play" type="button" aria-label="Reproduzir vídeo">
+      ▶
+    </button>
+  </article>
+
+
+  <article
+    class="video-card reveal"
+    data-video="08-o-que-procuramos.mp4"
+    data-title="O que procuramos agora"
+    tabindex="0"
+    role="button"
+    aria-label="Ver vídeo: O que procuramos agora"
+  >
+    <div class="video-number">08</div>
+
+    <div class="video-card-copy">
+      <span class="video-kicker">O convite</span>
+      <h3>O que procuramos agora</h3>
+      <p>
+        Parceiros que queiram ajudar a transformar uma visão numa infraestrutura real.
+      </p>
+    </div>
+
+    <button class="round-play" type="button" aria-label="Reproduzir vídeo">
+      ▶
+    </button>
+  </article>
+
+</div> 
 
 </section>
 
-<!-- HOW IT WORKS -->
 <section class="journey section" id="como-funciona">
 
-  <div class="journey-bg-word">
-    INTEGRA
-  </div>
+  <div class="journey-bg-word">INTEGRA</div>
 
   <div class="section-head reveal">
 
     <div>
       <div class="section-label">Uma única jornada</div>
-
-      <h2>
-        Do “cheguei” ao
-        <span>“já pertenço”.</span>
-      </h2>
+      <h2>Do “cheguei” ao <span>“já pertenço”.</span></h2>
     </div>
 
     <p>
@@ -576,7 +630,6 @@ document.documentElement.classList.add('js');
 
 </section>
 
-<!-- ASSOCIATION -->
 <section class="association section" id="missao">
 
   <div class="association-panel reveal">
@@ -626,7 +679,6 @@ document.documentElement.classList.add('js');
 
 </section>
 
-<!-- BUSINESS -->
 <section class="business section" id="sustentabilidade">
 
   <div class="section-head reveal">
@@ -711,7 +763,6 @@ document.documentElement.classList.add('js');
 
 </section>
 
-<!-- PARTNERSHIP -->
 <section class="partnership section" id="parcerias">
 
   <div class="partnership-inner reveal">
@@ -730,42 +781,30 @@ document.documentElement.classList.add('js');
     <div class="partnership-options">
 
       <a href="mailto:contacto@myintegra.pt?subject=Parceria%20institucional%20InTEGRA">
-
         <span>01</span>
-
         <div>
           <strong>Entidade pública</strong>
           <small>Quero explorar uma parceria institucional</small>
         </div>
-
         <b>↗</b>
-
       </a>
 
       <a href="mailto:contacto@myintegra.pt?subject=Parceria%20empresarial%20InTEGRA">
-
         <span>02</span>
-
         <div>
           <strong>Empresa</strong>
           <small>Quero conhecer o modelo B2B</small>
         </div>
-
         <b>↗</b>
-
       </a>
 
       <a href="mailto:contacto@myintegra.pt?subject=Apoio%20ao%20projeto%20InTEGRA">
-
         <span>03</span>
-
         <div>
           <strong>Fundação ou parceiro</strong>
           <small>Quero apoiar o desenvolvimento do projeto</small>
         </div>
-
         <b>↗</b>
-
       </a>
 
     </div>
@@ -774,21 +813,21 @@ document.documentElement.classList.add('js');
 
 </section>
 
-<!-- FINAL -->
 <section class="finale section">
 
-  <div class="finale-world">
+<div class="finale-world">
 
-    <img
-      src="assets/logo-integra-square.png"
-      alt=""
-      width="1024"
-      height="1024"
-      loading="lazy"
-      decoding="async"
-    />
+  <img
+    src="assets/logo-integra-novo.png"
+    alt="Símbolo InTEGRA"
+    width="1254"
+    height="1254"
+    loading="lazy"
+    decoding="async"
+    style="width:100%; height:auto; object-fit:contain;"
+  />
 
-  </div>
+</div>
 
   <div class="finale-copy reveal">
 
@@ -842,13 +881,10 @@ document.documentElement.classList.add('js');
     </a>
   </p>
 
-  <p>
-    © 2026 InTEGRA
-  </p>
+  <p>© 2026 InTEGRA</p>
 
 </footer>
 
-<!-- VIDEO MODAL -->
 <div
   aria-hidden="true"
   aria-labelledby="modalTitle"
@@ -885,18 +921,11 @@ document.documentElement.classList.add('js');
         preload="metadata"
       ></video>
 
-      <div
-        class="video-placeholder"
-        id="videoPlaceholder"
-      >
+      <div class="video-placeholder" id="videoPlaceholder">
 
-        <div class="placeholder-play">
-          ▶
-        </div>
+        <div class="placeholder-play">▶</div>
 
-        <strong>
-          Vídeo ainda não adicionado
-        </strong>
+        <strong>Vídeo ainda não adicionado</strong>
 
         <span>
           Coloca o ficheiro MP4 correspondente na pasta
