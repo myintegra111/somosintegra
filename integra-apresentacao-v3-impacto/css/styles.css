@@ -2288,3 +2288,292 @@ body.modal-open .presentation-fab {
     right: 12px;
   }
 }
+
+
+/* ==========================================================
+   LOGÓTIPO VIVO — CHEGADAS A PORTUGAL
+   Mantém o layout original da V3.
+   ========================================================== */
+
+.world-stage-arrivals {
+  overflow: visible;
+}
+
+.arrival-cinema {
+  position: absolute;
+  inset: -15%;
+  z-index: 2;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.arrival-flight-map {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+/*
+  Os aviões passam por BAIXO do símbolo.
+  Quando convergem para o centro, o globo oculta-os e cria a sensação
+  de que "chegaram" à InTEGRA/Portugal.
+*/
+.world-3d {
+  z-index: 5;
+}
+
+.world-shadow {
+  z-index: 4;
+}
+
+.orbit {
+  z-index: 3;
+}
+
+.floating-label {
+  z-index: 8;
+}
+
+.arrival-trail {
+  fill: none;
+  stroke: url(#trailOrange);
+  stroke-width: 2.2;
+  stroke-linecap: round;
+  opacity: .26;
+  filter: url(#trailGlow);
+  stroke-dasharray: 10 24;
+  animation: arrivalTrailFlow 2.8s linear infinite;
+}
+
+.trail-b {
+  opacity: .20;
+  animation-duration: 3.5s;
+}
+
+.trail-c {
+  opacity: .12;
+  animation-duration: 4.2s;
+}
+
+.mini-plane {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.plane-fuselage {
+  fill: #fff9f2;
+  stroke: rgba(255,255,255,.45);
+  stroke-width: 1.2;
+}
+
+.plane-wing {
+  fill: #d7dbe0;
+}
+
+.plane-tail {
+  fill: var(--orange);
+}
+
+.plane-window {
+  fill: #4c6678;
+}
+
+.mini-plane-a {
+  color: #fff;
+}
+
+.mini-plane-b {
+  opacity: .9;
+}
+
+.mini-plane-c,
+.mini-plane-d {
+  opacity: .66;
+}
+
+.mini-traveller {
+  transform-box: fill-box;
+  transform-origin: center bottom;
+}
+
+.traveller-head {
+  fill: #e8b596;
+  stroke: rgba(255,255,255,.75);
+  stroke-width: 2;
+}
+
+.traveller-head.alt {
+  fill: #9b6b4f;
+}
+
+.traveller-body,
+.traveller-limb {
+  fill: none;
+  stroke: #f6f0ea;
+  stroke-width: 7;
+  stroke-linecap: round;
+}
+
+.traveller-body.alt,
+.traveller-limb.alt {
+  stroke: #ffe0c8;
+}
+
+.traveller-arm-a,
+.traveller-leg-b {
+  animation: travellerLimbA .55s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+.traveller-arm-b,
+.traveller-leg-a {
+  animation: travellerLimbB .55s ease-in-out infinite alternate;
+  transform-origin: center;
+}
+
+.traveller-case {
+  fill: rgba(255,100,31,.16);
+  stroke: var(--orange-2);
+  stroke-width: 3;
+}
+
+.traveller-case.alt-case {
+  fill: rgba(255,196,92,.12);
+  stroke: #ffc45c;
+}
+
+.traveller-case-handle,
+.traveller-case-handle.alt-handle {
+  fill: none;
+  stroke: var(--orange-2);
+  stroke-width: 3;
+}
+
+.traveller-case-handle.alt-handle {
+  stroke: #ffc45c;
+}
+
+.case-wheel {
+  fill: #ded7d1;
+}
+
+.arrival-destination {
+  position: absolute;
+  right: 11%;
+  bottom: 13%;
+  z-index: 7;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+  column-gap: 7px;
+  row-gap: 1px;
+  padding: 7px 10px;
+  border-radius: 999px;
+  color: #e5d9d1;
+  background: rgba(14,8,5,.55);
+  border: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(10px);
+  opacity: .72;
+  animation: arrivalDestinationPulse 3.6s ease-in-out infinite;
+}
+
+.arrival-destination-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background:
+    linear-gradient(90deg,#168743 0 44%,#db2d2d 44% 100%);
+  box-shadow: 0 0 12px rgba(255,100,31,.45);
+  grid-row: 1 / span 2;
+}
+
+.arrival-destination span {
+  font-size: 8px;
+  color: #94857c;
+  text-transform: uppercase;
+  letter-spacing: .11em;
+}
+
+.arrival-destination strong {
+  font-size: 10px;
+  font-family: "Manrope", sans-serif;
+  letter-spacing: .04em;
+}
+
+.world-stage-arrivals:hover .arrival-trail {
+  opacity: .40;
+}
+
+.world-stage-arrivals:hover .arrival-destination {
+  opacity: .92;
+}
+
+@keyframes arrivalTrailFlow {
+  to {
+    stroke-dashoffset: -68;
+  }
+}
+
+@keyframes travellerLimbA {
+  from { transform: rotate(-7deg); }
+  to   { transform: rotate(8deg); }
+}
+
+@keyframes travellerLimbB {
+  from { transform: rotate(7deg); }
+  to   { transform: rotate(-8deg); }
+}
+
+@keyframes arrivalDestinationPulse {
+  0%,100% {
+    transform: translateY(0);
+    opacity: .58;
+  }
+  50% {
+    transform: translateY(-3px);
+    opacity: .82;
+  }
+}
+
+/* No telemóvel preservamos o efeito, mas reduzimos elementos para não prejudicar performance. */
+@media (max-width: 700px) {
+  .arrival-cinema {
+    inset: -10%;
+  }
+
+  .mini-plane-c,
+  .mini-plane-d,
+  .mini-traveller-b,
+  .trail-c {
+    display: none;
+  }
+
+  .arrival-destination {
+    right: 7%;
+    bottom: 12%;
+    transform: scale(.88);
+    transform-origin: bottom right;
+  }
+
+  .arrival-trail {
+    stroke-width: 1.8;
+    opacity: .20;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .arrival-cinema {
+    display: none;
+  }
+}
+
+
+.arrival-cinema {
+  transition: filter .35s ease, opacity .35s ease;
+}
+
+.arrival-cinema.is-engaged {
+  filter: saturate(1.12) brightness(1.06);
+}

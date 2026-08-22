@@ -1,17 +1,29 @@
-ATUALIZAÇÃO — APRESENTAÇÃO EM DESTAQUE
+ATUALIZAÇÃO — LOGÓTIPO VIVO / CHEGADAS A PORTUGAL
 
-Substituir no projeto atual:
+Substituir:
 - index.html
 - css/styles.css
 - js/app.js
 
-O que muda:
-- Botão "Ver apresentação" no primeiro ecrã abre imediatamente o vídeo 1.
-- "Apresentação" passa a aparecer no menu principal.
-- Botão flutuante "Ver apresentação · 8 capítulos".
-- Modal com contador 1/8, barra de progresso, Anterior e Próximo.
-- Setas esquerda/direita do teclado mudam de capítulo.
-- No fim de um vídeo, o botão Próximo fica destacado.
-- Vídeos continuam a ser lidos da pasta videos/ com os nomes atuais.
+Mantido:
+- disposição original da homepage;
+- indicadores Portugal / 0 € / B2B+B2G;
+- símbolo InTEGRA e efeito 3D;
+- Pessoas / Oportunidades / Integração;
+- Descobrir;
+- apresentação em 8 vídeos;
+- restantes páginas.
 
-Testar com Go Live antes de fazer git push.
+Adicionado:
+- 4 aviões SVG desenhados no próprio site;
+- rotas curvas convergentes para o símbolo;
+- rastos luminosos;
+- aviões desaparecem atrás do globo ao chegar;
+- 2 mini viajantes com malas;
+- pequeno indicador "Chegada · Portugal";
+- reação visual ao passar o rato;
+- versão mobile reduzida para proteger performance;
+- respeito por prefers-reduced-motion.
+
+Não existem imagens ou emojis para os aviões/personagens.
+Tudo é vetorial e faz parte real da página.

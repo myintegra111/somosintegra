@@ -285,3 +285,21 @@ if (
     world.style.transform = "";
   });
 }
+
+
+/* Efeito adicional do "mundo vivo": reação discreta ao rato */
+const arrivalCinema = document.querySelector(".arrival-cinema");
+
+if (
+  stage &&
+  arrivalCinema &&
+  window.matchMedia("(pointer: fine) and (prefers-reduced-motion: no-preference)").matches
+) {
+  stage.addEventListener("mouseenter", () => {
+    arrivalCinema.classList.add("is-engaged");
+  });
+
+  stage.addEventListener("mouseleave", () => {
+    arrivalCinema.classList.remove("is-engaged");
+  });
+}
