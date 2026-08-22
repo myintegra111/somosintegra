@@ -1,0 +1,18 @@
+InTEGRA LIVE WORLD v5 — CLEAN
+
+ALTERAÇÕES PRINCIPAIS:
+- removidos: bicicleta, mota, supercarro, paraquedista e bonecos pendurados no topo;
+- não existem pessoas na parte superior do logótipo;
+- NPCs menores e organizados apenas na zona inferior;
+- balões de fala continuam sempre direitos e legíveis;
+- aviões continuam no topo;
+- autocarro InTEGRA NÃO desaparece no logótipo:
+  atravessa a cena e continua caminho até sair pela direita;
+- resto do site preservado.
+
+SUBSTITUIR:
+- index.html
+- css/styles.css
+- js/app.js
+
+Testar primeiro com Go Live antes de publicar.

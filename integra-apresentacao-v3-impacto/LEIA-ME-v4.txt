@@ -1,0 +1,19 @@
+InTEGRA LIVE WORLD v4
+
+Substituir no projeto:
+- index.html
+- css/styles.css
+- js/app.js
+
+O que foi corrigido / melhorado:
+- balões deixam de ficar invertidos
+- balões mais legíveis e acima do logo
+- pessoas um pouco menores e mais organizadas
+- autocarro entra no logo
+- bike, mota e supercar entram no logo
+- pessoa de paraquedas nos primeiros 15 segundos
+- guia pendurado aparece raramente com frase sobre integração
+- menos cruzamentos estranhos
+
+Nota crítica:
+Isto continua a ser pseudo-3D. Se quiseres cinema 3D mesmo, tens de saltar para vídeo ou WebGL/Three.js.

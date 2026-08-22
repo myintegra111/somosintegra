@@ -1,0 +1,22 @@
+InTEGRA LIVE WORLD v3
+
+Substituir:
+- index.html
+- css/styles.css
+- js/app.js
+
+Melhorias desta versão:
+- NPCs maiores e visualmente mais ricos
+- mistura de homens, mulheres e crianças
+- grupos, pares e aparições sozinhas
+- sem repetição da mesma personagem durante 1 minuto, salvo falta de alternativas
+- sem repetição da mesma fala durante 1 minuto
+- balões de fala muito mais legíveis, com palavra-chave destacada
+- palavras marcantes em volta da zona da InTEGRA
+- aviões mais lentos; só surge novo avião 3 segundos depois do anterior "aterrar"
+- autocarro INTEGRA a dirigir-se ao símbolo
+- z-index por faixas para reduzir cruzamentos estranhos
+
+Importante:
+Isto é pseudo-3D profissional em SVG/CSS/JS.
+Se quiseres personagens 3D cinematográficas MESMO, a alternativa certa é vídeo ou WebGL/Three.js.

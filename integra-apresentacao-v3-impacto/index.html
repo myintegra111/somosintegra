@@ -274,7 +274,7 @@ document.documentElement.classList.add('js');
   </div>
 
   <div
-    aria-label="Símbolo InTEGRA em rotação com chegadas animadas a Portugal"
+    aria-label="Símbolo InTEGRA em rotação com pessoas e aviões a chegar a Portugal"
     class="world-stage world-stage-arrivals"
   >
 
@@ -282,152 +282,49 @@ document.documentElement.classList.add('js');
     <div class="orbit orbit-2"></div>
     <div class="orbit orbit-3"></div>
 
-    <!-- CHEGADAS ANIMADAS: aviões + pessoas a aproximarem-se da InTEGRA -->
-    <div class="arrival-cinema" aria-hidden="true">
+    <!-- MUNDO VIVO InTEGRA: aviões + NPCs -->
+    <div class="integra-live-world" id="integraLiveWorld" aria-hidden="true">
 
-      <svg class="arrival-flight-map" viewBox="0 0 1000 1000" preserveAspectRatio="xMidYMid meet">
-        <defs>
-          <filter id="planeGlow" x="-80%" y="-80%" width="260%" height="260%">
-            <feGaussianBlur stdDeviation="7" result="blur"/>
-            <feMerge>
-              <feMergeNode in="blur"/>
-              <feMergeNode in="SourceGraphic"/>
-            </feMerge>
-          </filter>
+      <div class="live-airspace" id="liveAirspace"></div>
 
-          <filter id="trailGlow" x="-50%" y="-50%" width="200%" height="200%">
-            <feGaussianBlur stdDeviation="5"/>
-          </filter>
-
-          <linearGradient id="trailOrange" x1="0" x2="1">
-            <stop offset="0" stop-color="#ff641f" stop-opacity="0"/>
-            <stop offset=".55" stop-color="#ff8a3d" stop-opacity=".45"/>
-            <stop offset="1" stop-color="#ffd0ad" stop-opacity=".9"/>
-          </linearGradient>
-
-          <!-- Rotas curvas que convergem no símbolo -->
-          <path id="flightPathA" d="M -120 170 C 180 160 260 300 455 455"/>
-          <path id="flightPathB" d="M 1110 250 C 860 210 760 325 560 468"/>
-          <path id="flightPathC" d="M 930 930 C 820 735 705 620 555 535"/>
-          <path id="flightPathD" d="M 35 795 C 165 700 305 610 445 530"/>
-
-          <path id="travellerPathA" d="M 25 790 C 160 775 300 700 445 590"/>
-          <path id="travellerPathB" d="M 980 820 C 820 780 700 700 565 595"/>
-        </defs>
-
-        <!-- rastos subtis -->
-        <path class="arrival-trail trail-a" d="M -120 170 C 180 160 260 300 455 455"/>
-        <path class="arrival-trail trail-b" d="M 1110 250 C 860 210 760 325 560 468"/>
-        <path class="arrival-trail trail-c" d="M 930 930 C 820 735 705 620 555 535"/>
-
-        <!-- Avião 1 -->
-        <g class="mini-plane mini-plane-a" filter="url(#planeGlow)">
-          <g transform="scale(.62)">
-            <path class="plane-fuselage" d="M-55 -7 C-28 -15 28 -15 58 -5 C67 -2 67 5 58 8 C26 16 -28 14 -55 8 Z"/>
-            <path class="plane-wing" d="M-5 -6 L35 -38 L49 -35 L22 -4 Z"/>
-            <path class="plane-wing" d="M-4 7 L35 38 L49 35 L21 5 Z"/>
-            <path class="plane-tail" d="M-43 -4 L-31 -27 L-19 -24 L-25 -3 Z"/>
-            <circle class="plane-window" cx="9" cy="-3" r="2.4"/>
-            <circle class="plane-window" cx="19" cy="-3" r="2.4"/>
-            <circle class="plane-window" cx="29" cy="-3" r="2.4"/>
-          </g>
-          <animateMotion dur="7.4s" begin="0s" repeatCount="indefinite" rotate="auto">
-            <mpath href="#flightPathA"/>
-          </animateMotion>
-          <animate attributeName="opacity" values="0;1;1;.95;0" keyTimes="0;.08;.65;.82;1" dur="7.4s" repeatCount="indefinite"/>
-        </g>
-
-        <!-- Avião 2 -->
-        <g class="mini-plane mini-plane-b" filter="url(#planeGlow)">
-          <g transform="scale(.50)">
-            <path class="plane-fuselage" d="M-55 -7 C-28 -15 28 -15 58 -5 C67 -2 67 5 58 8 C26 16 -28 14 -55 8 Z"/>
-            <path class="plane-wing" d="M-5 -6 L35 -38 L49 -35 L22 -4 Z"/>
-            <path class="plane-wing" d="M-4 7 L35 38 L49 35 L21 5 Z"/>
-            <path class="plane-tail" d="M-43 -4 L-31 -27 L-19 -24 L-25 -3 Z"/>
-            <circle class="plane-window" cx="9" cy="-3" r="2.4"/>
-            <circle class="plane-window" cx="19" cy="-3" r="2.4"/>
-            <circle class="plane-window" cx="29" cy="-3" r="2.4"/>
-          </g>
-          <animateMotion dur="9.2s" begin="1.8s" repeatCount="indefinite" rotate="auto">
-            <mpath href="#flightPathB"/>
-          </animateMotion>
-          <animate attributeName="opacity" values="0;1;1;.95;0" keyTimes="0;.08;.66;.84;1" dur="9.2s" begin="1.8s" repeatCount="indefinite"/>
-        </g>
-
-        <!-- Avião 3 -->
-        <g class="mini-plane mini-plane-c" filter="url(#planeGlow)">
-          <g transform="scale(.42)">
-            <path class="plane-fuselage" d="M-55 -7 C-28 -15 28 -15 58 -5 C67 -2 67 5 58 8 C26 16 -28 14 -55 8 Z"/>
-            <path class="plane-wing" d="M-5 -6 L35 -38 L49 -35 L22 -4 Z"/>
-            <path class="plane-wing" d="M-4 7 L35 38 L49 35 L21 5 Z"/>
-            <path class="plane-tail" d="M-43 -4 L-31 -27 L-19 -24 L-25 -3 Z"/>
-          </g>
-          <animateMotion dur="11.6s" begin="4.1s" repeatCount="indefinite" rotate="auto">
-            <mpath href="#flightPathC"/>
-          </animateMotion>
-          <animate attributeName="opacity" values="0;.7;.7;.6;0" keyTimes="0;.1;.68;.86;1" dur="11.6s" begin="4.1s" repeatCount="indefinite"/>
-        </g>
-
-        <!-- Avião 4, muito discreto -->
-        <g class="mini-plane mini-plane-d">
-          <g transform="scale(.34)">
-            <path class="plane-fuselage" d="M-55 -7 C-28 -15 28 -15 58 -5 C67 -2 67 5 58 8 C26 16 -28 14 -55 8 Z"/>
-            <path class="plane-wing" d="M-5 -6 L35 -38 L49 -35 L22 -4 Z"/>
-            <path class="plane-wing" d="M-4 7 L35 38 L49 35 L21 5 Z"/>
-          </g>
-          <animateMotion dur="13.5s" begin="7s" repeatCount="indefinite" rotate="auto">
-            <mpath href="#flightPathD"/>
-          </animateMotion>
-          <animate attributeName="opacity" values="0;.45;.45;.3;0" keyTimes="0;.1;.67;.86;1" dur="13.5s" begin="7s" repeatCount="indefinite"/>
-        </g>
-
-        <!-- Viajante da esquerda -->
-        <g class="mini-traveller mini-traveller-a">
-          <g transform="scale(.55)">
-            <circle class="traveller-head" cx="0" cy="-38" r="13"/>
-            <path class="traveller-body" d="M0 -24 L0 16"/>
-            <path class="traveller-limb traveller-arm-a" d="M0 -12 L-19 7"/>
-            <path class="traveller-limb traveller-arm-b" d="M0 -11 L17 4"/>
-            <path class="traveller-limb traveller-leg-a" d="M0 16 L-13 42"/>
-            <path class="traveller-limb traveller-leg-b" d="M0 16 L15 41"/>
-            <rect class="traveller-case" x="23" y="8" width="24" height="34" rx="4"/>
-            <path class="traveller-case-handle" d="M29 8 L29 1 Q29 -4 34 -4 L37 -4 Q42 -4 42 1 L42 8"/>
-            <circle class="case-wheel" cx="29" cy="45" r="3"/>
-            <circle class="case-wheel" cx="42" cy="45" r="3"/>
-          </g>
-          <animateMotion dur="10.8s" begin="1s" repeatCount="indefinite" rotate="auto">
-            <mpath href="#travellerPathA"/>
-          </animateMotion>
-          <animate attributeName="opacity" values="0;1;1;.75;0" keyTimes="0;.08;.65;.82;1" dur="10.8s" begin="1s" repeatCount="indefinite"/>
-        </g>
-
-        <!-- Viajante da direita -->
-        <g class="mini-traveller mini-traveller-b">
-          <g transform="scale(.47)">
-            <circle class="traveller-head alt" cx="0" cy="-38" r="13"/>
-            <path class="traveller-body alt" d="M0 -24 L0 16"/>
-            <path class="traveller-limb traveller-arm-a alt" d="M0 -12 L-19 7"/>
-            <path class="traveller-limb traveller-arm-b alt" d="M0 -11 L17 4"/>
-            <path class="traveller-limb traveller-leg-a alt" d="M0 16 L-13 42"/>
-            <path class="traveller-limb traveller-leg-b alt" d="M0 16 L15 41"/>
-            <rect class="traveller-case alt-case" x="-46" y="8" width="24" height="34" rx="4"/>
-            <path class="traveller-case-handle alt-handle" d="M-40 8 L-40 1 Q-40 -4 -35 -4 L-32 -4 Q-27 -4 -27 1 L-27 8"/>
-            <circle class="case-wheel" cx="-40" cy="45" r="3"/>
-            <circle class="case-wheel" cx="-27" cy="45" r="3"/>
-          </g>
-          <animateMotion dur="12.6s" begin="5.2s" repeatCount="indefinite" rotate="auto">
-            <mpath href="#travellerPathB"/>
-          </animateMotion>
-          <animate attributeName="opacity" values="0;.8;.8;.6;0" keyTimes="0;.09;.65;.84;1" dur="12.6s" begin="5.2s" repeatCount="indefinite"/>
-        </g>
-
-      </svg>
-
-      <div class="arrival-destination">
-        <span class="arrival-destination-dot"></span>
-        <span>Chegada</span>
-        <strong>Portugal</strong>
+      <div class="impact-words impact-words-top" id="impactWordsTop">
+        <span>Documentos</span>
+        <span>Casa</span>
+        <span>Trabalho</span>
+        <span>Saúde</span>
+        <span>Português</span>
       </div>
+
+      <div class="npc-ground">
+        <div class="npc-ground-line"></div>
+        <div class="npc-ground-glow"></div>
+        <div class="npc-ground-citylights"></div>
+
+        <div class="npc-area-label">
+          <span class="npc-area-dot"></span>
+          <span>Chegadas</span>
+          <strong>Portugal</strong>
+        </div>
+
+        <div class="impact-words impact-words-bottom" id="impactWordsBottom">
+          <span>Comunidade</span>
+          <span>Integração</span>
+          <span>Oportunidades</span>
+          <span>Pertencer</span>
+          <span>Futuro</span>
+        </div>
+
+        <div class="npc-stage" id="npcStage"></div>
+        <div class="bus-stage" id="busStage"></div>
+        <div class="bus-lane"></div>
+
+        <div class="integration-gate" id="integrationGate">
+          <span class="integration-gate-ring gate-ring-a"></span>
+          <span class="integration-gate-ring gate-ring-b"></span>
+          <span class="integration-gate-core"></span>
+        </div>
+      </div>
+
     </div>
 
     <div class="world-shadow"></div>

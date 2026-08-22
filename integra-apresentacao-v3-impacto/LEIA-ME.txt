@@ -1,29 +1,23 @@
-ATUALIZAÇÃO — LOGÓTIPO VIVO / CHEGADAS A PORTUGAL
+InTEGRA LIVE WORLD v2
 
 Substituir:
 - index.html
 - css/styles.css
 - js/app.js
 
-Mantido:
-- disposição original da homepage;
-- indicadores Portugal / 0 € / B2B+B2G;
-- símbolo InTEGRA e efeito 3D;
-- Pessoas / Oportunidades / Integração;
-- Descobrir;
-- apresentação em 8 vídeos;
-- restantes páginas.
+O que foi feito:
+- Remove a animação SVG anterior que gerava NPCs “desmontados”.
+- Aviões vetoriais reais criados por JavaScript de 3 em 3 segundos.
+- Aviões alternam esquerda/direita e convergem para o logo.
+- NPCs criados como sprites SVG consistentes.
+- Pernas e braços ligados ao tronco.
+- NPCs andam na zona inferior.
+- NPCs param e mostram balões de fala.
+- NPCs podem fazer uma segunda fala quando existem outros NPCs em cena.
+- Todos terminam o ciclo aproximando-se e “entrando” na InTEGRA.
+- Máximo de 4 NPCs simultâneos.
+- Mobile reduz dimensões, mas mantém o conceito.
+- Respeita prefers-reduced-motion.
+- Mantém o layout original, labels e logótipo 3D.
 
-Adicionado:
-- 4 aviões SVG desenhados no próprio site;
-- rotas curvas convergentes para o símbolo;
-- rastos luminosos;
-- aviões desaparecem atrás do globo ao chegar;
-- 2 mini viajantes com malas;
-- pequeno indicador "Chegada · Portugal";
-- reação visual ao passar o rato;
-- versão mobile reduzida para proteger performance;
-- respeito por prefers-reduced-motion.
-
-Não existem imagens ou emojis para os aviões/personagens.
-Tudo é vetorial e faz parte real da página.
+Testar primeiro com Go Live.
