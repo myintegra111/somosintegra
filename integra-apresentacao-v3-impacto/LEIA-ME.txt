@@ -1,0 +1,17 @@
+ATUALIZAÇÃO — APRESENTAÇÃO EM DESTAQUE
+
+Substituir no projeto atual:
+- index.html
+- css/styles.css
+- js/app.js
+
+O que muda:
+- Botão "Ver apresentação" no primeiro ecrã abre imediatamente o vídeo 1.
+- "Apresentação" passa a aparecer no menu principal.
+- Botão flutuante "Ver apresentação · 8 capítulos".
+- Modal com contador 1/8, barra de progresso, Anterior e Próximo.
+- Setas esquerda/direita do teclado mudam de capítulo.
+- No fim de um vídeo, o botão Próximo fica destacado.
+- Vídeos continuam a ser lidos da pasta videos/ com os nomes atuais.
+
+Testar com Go Live antes de fazer git push.

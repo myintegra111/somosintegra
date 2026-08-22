@@ -4,9 +4,9 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0, viewport-fit=cover" name="viewport"/>
 
-<title>InTEGRA | Integração de Imigrantes em Portugal</title>
+<title>Associação InTEGRA | Integração de Imigrantes em Portugal</title>
 
-<meta content="Conheça a InTEGRA, uma associação em desenvolvimento dedicada à integração de imigrantes em Portugal, ligando pessoas, empresas, municípios e instituições." name="description"/>
+<meta content="A InTEGRA é uma associação portuguesa em desenvolvimento dedicada à integração de imigrantes em Portugal através de tecnologia, orientação e parcerias com empresas, municípios e instituições." name="description"/>
 <meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots"/>
 <meta content="Associação InTEGRA" name="author"/>
 <meta content="InTEGRA" name="application-name"/>
@@ -23,8 +23,8 @@
 <meta content="website" property="og:type"/>
 <meta content="pt_PT" property="og:locale"/>
 <meta content="InTEGRA" property="og:site_name"/>
-<meta content="InTEGRA | Integração de Imigrantes em Portugal" property="og:title"/>
-<meta content="Uma associação em desenvolvimento para tornar a integração em Portugal mais simples, humana e sustentável." property="og:description"/>
+<meta content="Associação InTEGRA | Integração de Imigrantes em Portugal" property="og:title"/>
+<meta content="Associação portuguesa em desenvolvimento dedicada à integração de imigrantes em Portugal através de tecnologia, orientação e parcerias." property="og:description"/>
 <meta content="https://www.somosintegra.pt/" property="og:url"/>
 <meta content="https://www.somosintegra.pt/assets/og-integra.jpg" property="og:image"/>
 <meta content="https://www.somosintegra.pt/assets/og-integra.jpg" property="og:image:secure_url"/>
@@ -34,8 +34,8 @@
 <meta content="InTEGRA — integração de imigrantes em Portugal" property="og:image:alt"/>
 
 <meta content="summary_large_image" name="twitter:card"/>
-<meta content="InTEGRA | Integração de Imigrantes em Portugal" name="twitter:title"/>
-<meta content="Uma associação em desenvolvimento para tornar a integração em Portugal mais simples, humana e sustentável." name="twitter:description"/>
+<meta content="Associação InTEGRA | Integração de Imigrantes em Portugal" name="twitter:title"/>
+<meta content="Associação portuguesa em desenvolvimento dedicada à integração de imigrantes em Portugal através de tecnologia, orientação e parcerias." name="twitter:description"/>
 <meta content="https://www.somosintegra.pt/assets/og-integra.jpg" name="twitter:image"/>
 <meta content="InTEGRA — integração de imigrantes em Portugal" name="twitter:image:alt"/>
 
@@ -89,7 +89,7 @@ document.documentElement.classList.add('js');
       "@type": "Organization",
       "@id": "https://www.somosintegra.pt/#organization",
       "name": "InTEGRA",
-      "alternateName": "Associação InTEGRA",
+      "alternateName": ["Associação InTEGRA", "Somos InTEGRA"],
       "url": "https://www.somosintegra.pt/",
       "logo": {
         "@type": "ImageObject",
@@ -120,7 +120,7 @@ document.documentElement.classList.add('js');
       "@id": "https://www.somosintegra.pt/#website",
       "url": "https://www.somosintegra.pt/",
       "name": "InTEGRA",
-      "alternateName": "Somos InTEGRA",
+      "alternateName": ["Associação InTEGRA", "Somos InTEGRA", "somosintegra.pt"],
       "inLanguage": "pt-PT",
       "publisher": {
         "@id": "https://www.somosintegra.pt/#organization"
@@ -130,8 +130,8 @@ document.documentElement.classList.add('js');
       "@type": "WebPage",
       "@id": "https://www.somosintegra.pt/#webpage",
       "url": "https://www.somosintegra.pt/",
-      "name": "InTEGRA | Integração de Imigrantes em Portugal",
-      "description": "Conheça a InTEGRA, uma associação em desenvolvimento dedicada à integração de imigrantes em Portugal, ligando pessoas, empresas, municípios e instituições.",
+      "name": "Associação InTEGRA | Integração de Imigrantes em Portugal",
+      "description": "A InTEGRA é uma associação portuguesa em desenvolvimento dedicada à integração de imigrantes em Portugal através de tecnologia, orientação e parcerias com empresas, municípios e instituições.",
       "isPartOf": {
         "@id": "https://www.somosintegra.pt/#website"
       },
@@ -175,17 +175,34 @@ document.documentElement.classList.add('js');
   </a>
 
   <nav aria-label="Navegação principal" class="nav">
-    <a href="#missao">Missão</a>
-    <a href="#como-funciona">Como funciona</a>
-    <a href="#sustentabilidade">Sustentabilidade</a>
-    <a href="#parcerias">Parcerias</a>
+    <a href="sobre.html">Sobre</a>
+    <a class="nav-presentation" href="#historia">Apresentação</a>
+    <a href="como-funciona.html">Como funciona</a>
+    <a href="empresas.html">Empresas</a>
+    <a href="municipios.html">Municípios</a>
+    <a href="parcerias.html">Parcerias</a>
+    <a href="contactos.html">Contactos</a>
   </nav>
 
-  <a class="top-cta" href="#historia">
-    Conhecer o projeto
+  <a class="top-cta" href="contactos.html">
+    Falar connosco
   </a>
 
 </header>
+
+<button
+  class="presentation-fab"
+  id="presentationFab"
+  data-presentation-start="0"
+  type="button"
+  aria-label="Abrir apresentação da InTEGRA em 8 vídeos"
+>
+  <span aria-hidden="true" class="presentation-fab-icon">▶</span>
+  <span class="presentation-fab-copy">
+    <strong>Ver apresentação</strong>
+    <small>8 capítulos</small>
+  </span>
+</button>
 
 <main id="conteudo-principal">
 
@@ -208,20 +225,29 @@ document.documentElement.classList.add('js');
     </h1>
 
     <p class="hero-lead">
-      A InTEGRA é um projeto em desenvolvimento que pretende transformar
-      a chegada a Portugal numa jornada mais simples, mais humana e mais
-      digna — sem custo para o imigrante.
+      A InTEGRA é uma associação portuguesa em desenvolvimento dedicada à integração
+      de imigrantes em Portugal. Através de tecnologia, orientação e parcerias com
+      empresas, municípios e instituições, queremos tornar a chegada e a integração
+      mais simples, humana e acessível.
     </p>
 
     <div class="hero-actions">
 
-      <a class="primary-button" href="#historia">
-        <span aria-hidden="true" class="play-icon">↓</span>
-        Conhecer o projeto
-      </a>
+      <button
+        class="primary-button presentation-launch"
+        data-presentation-start="0"
+        type="button"
+        aria-label="Ver apresentação da InTEGRA em 8 vídeos"
+      >
+        <span aria-hidden="true" class="presentation-play">▶</span>
+        <span class="presentation-button-text">
+          <strong>Ver apresentação</strong>
+          <small>8 capítulos</small>
+        </span>
+      </button>
 
-      <a class="secondary-button" href="#parcerias">
-        Explorar parcerias
+      <a class="secondary-button" href="sobre.html">
+        Explorar o projeto
       </a>
 
     </div>
@@ -369,17 +395,17 @@ document.documentElement.classList.add('js');
   <div class="section-head reveal">
 
     <div>
-      <div class="section-label">Conheça a InTEGRA</div>
+      <div class="section-label">A apresentação principal</div>
 
       <h2>
-        A InTEGRA, explicada<br/>
-        <span>capítulo a capítulo.</span>
+        Conheça a InTEGRA<br/>
+        <span>em 8 vídeos.</span>
       </h2>
     </div>
 
     <p>
-      O projeto está em desenvolvimento. Estes oito capítulos apresentam
-      a origem, a missão, o modelo sustentável e a visão nacional da InTEGRA.
+      Comece pela origem do projeto e avance, capítulo a capítulo, pelo problema,
+      solução, modelo sustentável, estrutura, visão nacional e formas de colaboração.
     </p>
 
   </div>
@@ -702,7 +728,7 @@ document.documentElement.classList.add('js');
 
   <div class="business-grid">
 
-    <article class="business-card reveal">
+    <a class="business-card reveal" href="empresas.html" aria-label="Conhecer a solução InTEGRA para empresas">
 
       <div class="business-icon">B2B</div>
 
@@ -719,9 +745,9 @@ document.documentElement.classList.add('js');
         <li>Dashboard de acompanhamento</li>
       </ul>
 
-    </article>
+    </a>
 
-    <article class="business-card reveal">
+    <a class="business-card reveal" href="municipios.html" aria-label="Conhecer a solução InTEGRA para municípios">
 
       <div class="business-icon">B2G</div>
 
@@ -738,9 +764,9 @@ document.documentElement.classList.add('js');
         <li>Articulação institucional</li>
       </ul>
 
-    </article>
+    </a>
 
-    <article class="business-card reveal">
+    <a class="business-card reveal" href="parcerias.html" aria-label="Conhecer formas de parceria com a InTEGRA">
 
       <div class="business-icon">P</div>
 
@@ -757,7 +783,7 @@ document.documentElement.classList.add('js');
         <li>Financiamento institucional</li>
       </ul>
 
-    </article>
+    </a>
 
   </div>
 
@@ -857,10 +883,8 @@ document.documentElement.classList.add('js');
 
 </main>
 
-<footer>
-
+<footer class="site-footer">
   <div class="footer-brand">
-
     <img
       alt=""
       decoding="async"
@@ -869,20 +893,24 @@ document.documentElement.classList.add('js');
       src="assets/logo-integra.webp"
       width="512"
     />
-
     <strong>InTEGRA</strong>
-
   </div>
+
+  <nav class="footer-nav" aria-label="Navegação do rodapé">
+    <a href="sobre.html">Sobre</a>
+    <a href="como-funciona.html">Como funciona</a>
+    <a href="empresas.html">Empresas</a>
+    <a href="municipios.html">Municípios</a>
+    <a href="parcerias.html">Parcerias</a>
+    <a href="contactos.html">Contactos</a>
+  </nav>
 
   <p>
     Associação em desenvolvimento · Portugal ·
-    <a href="mailto:contacto@myintegra.pt">
-      contacto@myintegra.pt
-    </a>
+    <a href="mailto:contacto@myintegra.pt">contacto@myintegra.pt</a>
   </p>
 
   <p>© 2026 InTEGRA</p>
-
 </footer>
 
 <div
@@ -895,9 +923,8 @@ document.documentElement.classList.add('js');
   inert
   role="dialog"
 >
-
   <button
-    aria-label="Fechar vídeo"
+    aria-label="Fechar apresentação"
     class="modal-close"
     id="modalClose"
     type="button"
@@ -905,11 +932,15 @@ document.documentElement.classList.add('js');
     ×
   </button>
 
-  <div class="modal-content">
+  <div class="modal-content presentation-modal-content">
 
     <div class="modal-meta">
-      <span>InTEGRA · Apresentação</span>
-      <h2 id="modalTitle">Vídeo</h2>
+      <div class="modal-meta-top">
+        <span>InTEGRA · Apresentação</span>
+        <span class="video-counter" id="videoCounter">1 / 8</span>
+      </div>
+      <h2 id="modalTitle">Porque criei a InTEGRA</h2>
+      <div class="presentation-progress" id="presentationProgress" aria-hidden="true"></div>
     </div>
 
     <div class="video-frame">
@@ -922,18 +953,38 @@ document.documentElement.classList.add('js');
       ></video>
 
       <div class="video-placeholder" id="videoPlaceholder">
-
         <div class="placeholder-play">▶</div>
-
         <strong>Vídeo ainda não adicionado</strong>
-
-        <span>
-          Coloca o ficheiro MP4 correspondente na pasta
-          <code>videos</code>.
-        </span>
-
+        <span>Este capítulo será disponibilizado em breve.</span>
       </div>
 
+    </div>
+
+    <div class="presentation-navigation">
+      <button
+        class="presentation-nav-button previous"
+        id="prevVideo"
+        type="button"
+        aria-label="Ver capítulo anterior"
+      >
+        <span aria-hidden="true">←</span>
+        <span>Anterior</span>
+      </button>
+
+      <div class="presentation-navigation-center">
+        <small id="modalChapterLabel">Capítulo 1 de 8</small>
+        <strong id="nextVideoTitle">A seguir: O problema que queremos resolver</strong>
+      </div>
+
+      <button
+        class="presentation-nav-button next"
+        id="nextVideo"
+        type="button"
+        aria-label="Ver próximo capítulo"
+      >
+        <span>Próximo</span>
+        <span aria-hidden="true">→</span>
+      </button>
     </div>
 
   </div>
